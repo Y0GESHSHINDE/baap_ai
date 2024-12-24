@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54.649" height="52.089" viewBox="0 0 54.649 52.089">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1198c3"/>
+      <stop offset="1"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_4" data-name="Group 4" transform="translate(-68.1 -919.125)">
+    <path id="Icon_core-headphones" data-name="Icon core-headphones" d="M49.934,21.913H44.469V18.27a16.395,16.395,0,0,0-32.79,0v3.643H6.215A5.471,5.471,0,0,0,.75,27.378V41.951a5.471,5.471,0,0,0,5.465,5.465H11.68a3.647,3.647,0,0,0,3.643-3.643V18.27a12.751,12.751,0,0,1,25.5,0v25.5a3.647,3.647,0,0,0,3.643,3.643h5.465A5.471,5.471,0,0,0,55.4,41.951V27.378a5.471,5.471,0,0,0-5.465-5.465ZM11.68,43.773H6.215a1.824,1.824,0,0,1-1.822-1.822V27.378a1.824,1.824,0,0,1,1.822-1.822H11.68v6.376h0V43.773Zm40.076-1.822a1.824,1.824,0,0,1-1.822,1.822H44.469V25.556h5.465a1.824,1.824,0,0,1,1.822,1.822Z" transform="translate(67.35 917.25)" fill="url(#linear-gradient)"/>
+    <g id="Icon_core-microphone" data-name="Icon core-microphone" transform="translate(84.675 941.896)">
+      <path id="Path_134" data-name="Path 134" d="M13.364,19.807a5.87,5.87,0,0,0,5.864-5.864V6.614a5.864,5.864,0,1,0-11.727,0v7.33a5.87,5.87,0,0,0,5.864,5.864ZM9.455,6.614a3.909,3.909,0,1,1,7.818,0v7.33a3.909,3.909,0,1,1-7.818,0Z" transform="translate(-2.614 -0.75)" fill="#1497c3"/>
+      <path id="Path_135" data-name="Path 135" d="M23.3,8.25v3.42a8.8,8.8,0,1,1-17.591,0V8.25H3.75v3.42a10.764,10.764,0,0,0,9.773,10.705V27.8h1.955v-5.42A10.764,10.764,0,0,0,25.25,11.67V8.25Z" transform="translate(-3.75 1.523)" fill="#1497c3"/>
+    </g>
+  </g>
+</svg>

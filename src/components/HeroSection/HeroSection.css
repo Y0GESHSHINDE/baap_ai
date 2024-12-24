@@ -1,0 +1,11 @@
+#pinkBox {
+   padding: 0px 40px;
+   background-color: #FF5BBA;
+   border: 0px solid #FF5BBA;
+   border-radius: 30px;
+   text-align: center;
+   align-items: center;
+   font-size: 13px;
+   transform: matrix(0.93, -0.37, 0.37, 0.93, 0, 0);
+}
+

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="50" viewBox="0 0 50 50">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" y1="0.433" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6b64ff"/>
+      <stop offset="1" stop-color="#dd32fc"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.878" y1="0.324" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#6b64ff"/>
+      <stop offset="1" stop-color="#c93afc"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_3" data-name="Group 3" transform="translate(-524 -197)">
+    <path id="Icon_simple-opencollective" data-name="Icon simple-opencollective" d="M25,0A25,25,0,1,0,39.237,45.552l-6.473-6.477a16.073,16.073,0,1,1,0-28.15l6.473-6.477A24.881,24.881,0,0,0,25,0ZM45.552,10.763l-6.477,6.473a16.087,16.087,0,0,1,0,15.529l6.477,6.473a25.011,25.011,0,0,0,0-28.475Z" transform="translate(524 197)" fill="url(#linear-gradient)"/>
+    <g id="Icon_core-notes" data-name="Icon core-notes" transform="translate(537.585 210.669)">
+      <path id="Path_130" data-name="Path 130" d="M5.25,7.125H17.579v1.5H5.25Zm0,4.125H17.579v1.5H5.25Zm0,4.125h6.507v1.5H5.25Z" transform="translate(0 -0.67)" fill="url(#linear-gradient-2)"/>
+      <path id="Path_131" data-name="Path 131" d="M21.329,2.25H1.5V20.411H21.329ZM19.913,19.014h-17V3.647h17Z"/>
+    </g>
+  </g>
+</svg>
