@@ -1,8 +1,12 @@
+import person from "../../../public/assets/Icon material-personal-injury.svg";
+import img1 from "../../../public/assets/Icon material-twotone-people-alt.svg";
+import img2 from "../../../public/assets/Icon core-leaf.svg";
+
 const cardData = [
   {
     id: 0,
     title: "Hire Ready Talent",
-    image: "../../../public/assets/Icon material-personal-injury.svg",
+    image: person,
     description:
       "Good things does take so much time. You can hire some thing",
     bgColor: "#C1C485",
@@ -11,7 +15,7 @@ const cardData = [
   {
     id: 1,
     title: "Build Apps & Website",
-    image: "../../../public/assets/Icon material-personal-injury.svg",
+    image: person,
     description:
       "Good things does take so much time. You can hire some thing",
     bgColor: "#9CC0A4",
@@ -20,7 +24,7 @@ const cardData = [
   {
     id: 2,
     title: "Get Degree & Job",
-    image: "../../../public/assets/Icon material-personal-injury.svg",
+    image: person,
     description:
       "Good things does take so much time. You can hire some thing",
     bgColor: "#E59F87",
@@ -29,7 +33,7 @@ const cardData = [
   {
     id: 3,
     title: "Good People Foundation",
-    image: "../../../public/assets/Icon material-twotone-people-alt.svg",
+    image: img1,
     description: "Be part of our mission, join the good people foundation",
     bgColor: "#C1C485",
     link: "/good-people-foundation",
@@ -37,7 +41,7 @@ const cardData = [
   {
     id: 4,
     title: "Organic & Agriculture",
-    image: "../../../public/assets/Icon core-leaf.svg",
+    image: img2,
     description:
       "Sell with baap company, get associated with our farming network",
     bgColor: "#EAE9FF",

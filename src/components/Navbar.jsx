@@ -1,7 +1,10 @@
 import React from "react";
 import "../../public/font.css";
 import { useState } from "react";
-// import HeroSection from "./HeroSection";
+import icon1 from "../../public/assets/Icon corebrands-civicrm.svg";
+import icon2 from "../../public/assets/Icon core-laptop.svg"
+import icon3 from "../../public/assets/Icon core-flower.svg"
+import icon4 from "../../public/assets/Icon feather-phone-call-1.svg"
 
 function Navbar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -44,7 +47,7 @@ function Navbar() {
             href="#"
             className="flex items-center text-[12px] lg:text-[16px] hover:text-black">
             <img
-              src="../../public/assets/Icon corebrands-civicrm.svg"
+              src={icon1}
               alt="Products"
               className="me-1 h-2 lg:h-4"
             />
@@ -54,7 +57,7 @@ function Navbar() {
             href="#"
             className="flex items-center text-[12px] lg:text-[16px] hover:text-black">
             <img
-              src="../../public/assets/Icon core-laptop.svg"
+              src={icon2}
               alt="Education"
               className="me-1 h-2 lg:h-4"
             />
@@ -64,7 +67,7 @@ function Navbar() {
             href="#"
             className="flex items-center text-[12px] lg:text-[16px] hover:text-black">
             <img
-              src="../../public/assets/Icon core-flower.svg"
+              src={icon3}
               alt="Agriculture"
               className="me-1 h-2 lg:h-4"
             />
@@ -75,7 +78,7 @@ function Navbar() {
           href="tel:+18584336042"
           className="bg-indigo-500 dm-sans text-white py-2 px-2 lg:py-2 lg:px-4 text-[10px] lg:text-[16px] rounded-full flex items-center shadow-lg hover:bg-indigo-600">
           <img
-            src="../../public/assets/Icon feather-phone-call-1.svg"
+            src={icon4}
             alt="Call"
             className="me-2"
           />

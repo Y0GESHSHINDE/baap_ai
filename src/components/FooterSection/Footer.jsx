@@ -1,4 +1,7 @@
 import React from "react";
+import img1 from "../../../public/assets/Group 3.svg";
+import img2 from "../../../public/assets/Group 4.svg";
+import img3 from "../../../public/assets/Icon ion-finger-print-sharp.svg";
 
 function Footer() {
   return (
@@ -16,7 +19,7 @@ function Footer() {
       <ul className="absolute top-[75%] left-[50%] transform -translate-x-1/2 -translate-y-1/2 flex gap-10 text-center">
         <li className="flex flex-col items-center">
           <img
-            src="../../public/assets/Group 3.svg"
+            src={img1}
             alt="BAAP ERP"
             className="w-10 h-10"
           />
@@ -26,7 +29,7 @@ function Footer() {
         </li>
         <li className="flex flex-col items-center">
           <img
-            src="../../public/assets/Group 4.svg"
+            src={img2}
             alt="BAAP CRM"
             className=" w-10 h-10"
           />
@@ -36,7 +39,7 @@ function Footer() {
         </li>
         <li className="flex flex-col items-center">
           <img
-            src="../../public/assets/Icon ion-finger-print-sharp.svg"
+            src={img3}
             alt="Worker App"
             className="w-10 h-10"
           />

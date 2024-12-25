@@ -1,4 +1,6 @@
 import React from "react";
+import phone from "../../../public/assets/Icon feather-phone-call.svg"
+import whatsapp from "../../../public/assets/Icon akar-whatsapp-fill.svg"
 
 function ContactCard() {
   return (
@@ -33,14 +35,14 @@ function ContactCard() {
       <div className="mt-4 flex justify-between space-x-4">
         <button className="w-full flex items-center justify-center p-3 kumbh-sans font-semibold bg-gray-100 rounded-lg hover:bg-gray-200">
           <span>
-            <img src="../../public/assets/Icon feather-phone-call.svg" alt="" />
+            <img src={phone} alt="" />
           </span>{" "}
           <span className="ml-2 text-[12px] ">Call Now</span>
         </button>
         <button className="w-full flex items-center justify-center p-3 kumbh-sans font-semibold bg-gray-100 rounded-lg hover:bg-gray-200">
           <span>
             <img
-              src="../../public/assets/Icon akar-whatsapp-fill.svg"
+              src={whatsapp}
               alt=""
               srcset=""
             />

@@ -1,5 +1,6 @@
 // src/components/Card.js
 import React from "react";
+import arrow from "../../../public/assets/Icon core-arrow-right.svg"
 
 const Card = ({ title, logo, description, bgColor }) => {
   return (
@@ -18,7 +19,7 @@ const Card = ({ title, logo, description, bgColor }) => {
         <span className="mt-4 text-right text-gray-600 font-normal dm-sans">
           <a href="#" className="inline-flex items-center hover:underline">
             <span className="ms-1">
-              <img src="../../../public/assets/Icon core-arrow-right.svg" alt="" />
+              <img src={arrow} alt="" />
             </span>{" "}
           </a>
         </span>
