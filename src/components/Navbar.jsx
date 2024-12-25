@@ -1,113 +1,63 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../public/font.css";
-import { useState } from "react";
-import icon1 from "../../public/assets/Icon corebrands-civicrm.svg";
-import icon2 from "../../public/assets/Icon core-laptop.svg"
-import icon3 from "../../public/assets/Icon core-flower.svg"
-import icon4 from "../../public/assets/Icon feather-phone-call-1.svg"
+import { SiCivicrm } from "react-icons/si";
+import { CgLaptop } from "react-icons/cg";
+import { PiFlowerTulipDuotone } from "react-icons/pi";
+import { FiPhoneCall } from "react-icons/fi";
+import { FaBars } from "react-icons/fa";
+import { IoMdClose } from "react-icons/io";
 
 function Navbar() {
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
-    setMobileMenuOpen(!isMobileMenuOpen);
+    setIsMenuOpen(!isMenuOpen);
   };
+
   return (
-    <div className="container mx-auto  px-4 flex items-center  justify-between ">
+    <div className="relative container mx-auto flex justify-between items-center h-20">
+     
       <div className="flex items-center">
-        <div className="text-center text-[58px] satisfy">b</div>
-        <span className="ms-[15px]">
-          <h1 className="text-[15px] font-serif p-0 m-0 h-[15px] -mt-3 leading-none w-[15px]">
-            the
+        <h1 className="p-2 mt-3 satisfy text-[58px]">b</h1>
+        <div className="ms-[13px] p-0">
+          <h1 className="leading-none  md:text-[12px] lg:text-[15px] dm-sans">the</h1>
+          <h1 className="leading-none text-[25px] sm:text-[14px] md:text-[25px] lg:text-[34px] dm-sans font-bold">
+            baap <span className="font-normal">company</span>
           </h1>
-          <h1 className="text-black font-serif text-[20px] lg:text-[34px] p-0 m-0 leading-none font-bold">
-            baap company
-          </h1>
-        </span>
+        </div>
       </div>
 
-      <button className="flex md:hidden justify-start" onClick={toggleMenu}>
-        <svg
-          className="w-6 h-6"
-          fill="none"
-          stroke="currentColor"
-          viewBox="0 0 24 24"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            d="M4 6h16M4 12h16M4 18h16"></path>
-        </svg>
-      </button>
-
-      <div className=" hidden md:flex gap-5">
-        <nav className="flex items-center space-x-8 text-gray-700 dm-sans">
-          <a
-            href="#"
-            className="flex items-center text-[12px] lg:text-[16px] hover:text-black">
-            <img
-              src={icon1}
-              alt="Products"
-              className="me-1 h-2 lg:h-4"
-            />
-            Products
-          </a>
-          <a
-            href="#"
-            className="flex items-center text-[12px] lg:text-[16px] hover:text-black">
-            <img
-              src={icon2}
-              alt="Education"
-              className="me-1 h-2 lg:h-4"
-            />
-            Education
-          </a>
-          <a
-            href="#"
-            className="flex items-center text-[12px] lg:text-[16px] hover:text-black">
-            <img
-              src={icon3}
-              alt="Agriculture"
-              className="me-1 h-2 lg:h-4"
-            />
-            Agriculture
-          </a>
-        </nav>
-        <a
-          href="tel:+18584336042"
-          className="bg-indigo-500 dm-sans text-white py-2 px-2 lg:py-2 lg:px-4 text-[10px] lg:text-[16px] rounded-full flex items-center shadow-lg hover:bg-indigo-600">
-          <img
-            src={icon4}
-            alt="Call"
-            className="me-2"
-          />
-          +1 858 433 6042
-        </a>
-      </div>
-
+      
       <div
-        className={`${ isMobileMenuOpen ? "block" : "hidden"} absolute top-20 right-0 w-full md:hidden bg-[#EAE9FF]  h-[100%] gap-10 flex flex-col items-center  py-4`}>
-        <a
-          href="#"
-          className=" text-[12px] bg-indigo-500 dm-sans text-white py-2 px-4 rounded-full dm-sans ">
-          Products
-        </a>
-        <a
-          href="#"
-          className=" text-[12px] bg-indigo-500 dm-sans text-white py-2 px-4 rounded-full  dm-sans">
-          Education
-        </a>
-        <a
-          href="#"
-          className=" text-[12px] bg-indigo-500 dm-sans text-white py-2 px-4 rounded-full   dm-sans">
-          Agriculture
-        </a>
-        <a
-          href="tel:+18584336042"
-          className="bg-indigo-500 dm-sans text-white py-2 px-4 rounded-full ">
-          +1 858 433 6042
-        </a>
+        className="text-[25px]  me-8 cursor-pointer sm:hidden"
+        onClick={toggleMenu}
+      >
+        {isMenuOpen ? <IoMdClose /> : <FaBars />}
+      </div>
+
+      
+      <div
+        className={`absolute sm:relative top-20 sm:top-0 left-0 w-full sm:w-auto  sm:bg-transparent bg-[#7f7f7f]  transition-transform duration-500 ease-in-out ${
+          isMenuOpen ? "translate-x-0" : "-translate-x-full sm:translate-x-0"
+        }`}
+      >
+        <ul className="flex flex-col sm:flex-row items-center gap-6 sm:gap-2 md:gap-6 p-6 sm:p-0">
+          <li className="flex items-center text-[16px]  ">
+            <SiCivicrm className="text-[20px] me-2" />
+            Products
+          </li>
+          <li className="flex items-center text-[16px]  ">
+            <CgLaptop className="text-[20px] me-2" />
+            Education
+          </li>
+          <li className="flex items-center text-[16px]  ">
+            <PiFlowerTulipDuotone className="text-[20px] me-2" />
+            Agriculture
+          </li>
+          <h1 className="flex items-center text-[16px] p-3 rounded-full bg-[#635BFF] text-white">
+            <FiPhoneCall className="me-2" /> 9021030200
+          </h1>
+        </ul>
       </div>
     </div>
   );
