@@ -1,13 +1,14 @@
 import React from "react";
 import "./HeroSection.css";
 import ContactCard from "./ContactCard";
+import arrow from "../../../public/assets/Icon akar-arrow-counter-clockwise.svg";
 function GetInfoCard() {
   return (
     <div className=" h-full ">
       <div className="flex mt-16 ">
         <div className="relative right-12 top-28" >
           <img
-            src="../../../public/assets/Icon akar-arrow-counter-clockwise.svg"
+            src={arrow}
             alt=""
           />
         </div>

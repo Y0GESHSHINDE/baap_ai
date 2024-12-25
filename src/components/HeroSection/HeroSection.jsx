@@ -2,14 +2,15 @@ import React from "react";
 import GetInfoCard from "./GetInfoCard";
 import cardData from "./cardData";
 import Card from "./Card";
-
+import workfromHome from "../../../public/assets/—Pngtree—woman work from home with_5388281.png";
+import dotLogo from "../../../public/assets/Group 6.svg";
 function HeroSection() {
   return (
-    <div className="container mx-auto px-0 block w-full  lg:w-full lg:flex justify-center lg:justify-between">
+    <div className="container mx-auto px-0 block w-fit  lg:w-full lg:flex justify-center lg:justify-between">
       <div className="" >
         <img
           className="h-60 w-60 sm:h-60  sm:w-60 md:h-80 md:w-80 ms-10"
-          src="../../../public/assets/—Pngtree—woman work from home with_5388281.png"
+          src={workfromHome}
           alt=""
         />
         <div className=" relative   left-12  sm:left-16">
@@ -24,7 +25,7 @@ function HeroSection() {
           <h1 className="flex text-[10px]  md:text-[16px] lg:text-[40px] dm-sans">
             business for future.{" "}
             <span className=" mt-1 md:mt-3 lg:mt-8 ms-2  ">
-              <img src="../../../public/assets/Group 6.svg" alt="" srcset="" />
+              <img src={dotLogo} alt="" srcset="" />
             </span>
           </h1>
 
