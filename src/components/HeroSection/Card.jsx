@@ -5,7 +5,7 @@ const Card = ({ title, logo, description, bgColor }) => {
   return (
     <div>
     <div
-      className="ms-[10px] max-w-xs p-4  w-[174px] h-[186px] mt-5 mb-0  text-gray-800 rounded-lg shadow-md border border-gray-200"
+      className="ms-[10px] max-w-xs p-4  w-[300px] sm:w-[174px]  h-[186px]   mt-5 mb-0  text-gray-800 rounded-lg shadow-md border border-gray-200"
       style={{ backgroundColor: bgColor }}>
       <div className="flex items-center space-x-2">
         <div className="text-2xl">

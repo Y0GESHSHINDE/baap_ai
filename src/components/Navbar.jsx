@@ -84,9 +84,7 @@ function Navbar() {
       </div>
 
       <div
-        className={`${
-          isMobileMenuOpen ? "block" : "hidden"
-        } absolute top-20 right-0 w-full md:hidden bg-[#EAE9FF]  h-[100%] gap-10 flex flex-col items-center  py-4`}>
+        className={`${ isMobileMenuOpen ? "block" : "hidden"} absolute top-20 right-0 w-full md:hidden bg-[#EAE9FF]  h-[100%] gap-10 flex flex-col items-center  py-4`}>
         <a
           href="#"
           className=" text-[12px] bg-indigo-500 dm-sans text-white py-2 px-4 rounded-full dm-sans ">

@@ -20,7 +20,7 @@ function GetInfoCard() {
         </div>
       </div>
 
-      <div className="top-12 left-4 relative" >
+      <div className="top-12 lg:left-4   relative" >
       <ContactCard/>
       </div>
       

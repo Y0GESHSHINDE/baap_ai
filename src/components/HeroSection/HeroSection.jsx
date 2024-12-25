@@ -3,21 +3,21 @@ import GetInfoCard from "./GetInfoCard";
 import cardData from "./cardData";
 import Card from "./Card";
 
-
 function HeroSection() {
   return (
-    <div className="container mx-auto  px-4  flex justify-center lg:justify-between">
-      <div>
+    <div className="container mx-auto px-0 block w-full  lg:w-full lg:flex justify-center lg:justify-between">
+      <div className="" >
         <img
-          className="h-40 w-40 sm:h-60 sm:w-60 md:h-80 md:w-80"
+          className="h-60 w-60 sm:h-60  sm:w-60 md:h-80 md:w-80 ms-10"
           src="../../../public/assets/—Pngtree—woman work from home with_5388281.png"
           alt=""
         />
-        <div className=" md:relative  left-8  sm:left-16">
+        <div className=" relative   left-12  sm:left-16">
           <h1 className="dm-sans text-[18px] text-[#575757] ">Introducing</h1>
           <h1 className="kumbh-sans text-[22px] sm:text-[40px] md:text-[55px] text-[#635BFF]">
             BAAP <span className="text-[#373739]">AI</span>
           </h1>
+
           <h1 className="text-[10px]  md:text-[16px] lg:text-[40px] w-40 sm:w-full dm-sans">
             Get AI as a service for your business,
           </h1>
@@ -28,7 +28,7 @@ function HeroSection() {
             </span>
           </h1>
 
-          <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-5 gap-0 ">
+          <div className=" relative -left-10 sm:-left-20 lg:left-0 md:-left-14 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-5 gap-0 ">
             {cardData.map((card) => (
               <Card
                 key={card.id}
@@ -39,14 +39,15 @@ function HeroSection() {
             ))}
           </div>
         </div>
-
       </div>
 
-      <div className="hidden lg:flex ">
+      {/* <div className="  lg:hidden bg-gray-600 flex justify-center" >
+        <GetInfoCard/>
+      </div> */}
+
+      <div className="block lg:flex mb-20 ">
         <GetInfoCard />
       </div>
-
-      
     </div>
   );
 }
