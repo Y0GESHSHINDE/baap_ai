@@ -15,13 +15,13 @@ function LeftSection() {
   return (
     <div>
       <div className=" h-[220px] sm:h-[327px] flex justify-evenly sm:grid sm:grid-cols-3 lg:grid-cols-12 ">
-        <div className="flex items-center  text-[30px] opacity-20  sm:col-span-1  lg:col-span-1 ">
+        <div className="flex items-center  text-[30px] opacity-20  sm:col-span-1  w-8 lg:col-span-1 lg:-ms-4  ">
           <IoChevronBackCircleOutline />
         </div>
         <img
           src={img1}
           alt="Work from home"
-          className="w-[220px] h-[220px] sm:w-[327px] sm:h-[327px] sm:col-span-1 lg:col-span-5"
+          className="w-[220px] h-[220px] sm:w-[327px] sm:h-[327px] sm:col-span-1 lg:col-span-5 lg:-ms-12"
         />
         <div className="flex justify-end items-center text-[30px] opacity-20   sm:col-span-1  lg:col-span-6 ">
           <IoChevronForwardCircleOutline />
