@@ -15,7 +15,7 @@ function Navbar() {
   };
 
   return (
-    <div className="relative container p-5 mx-auto flex justify-between items-center h-20 shadow-md shadow-[#E5E5E5]">
+    <div className="relative container p-5 mx-auto flex justify-between items-center h-[82px] shadow-md shadow-[#E5E5E5]">
      
       <div className="flex items-center">
         <h1 className="p-2 mt-3 satisfy text-[58px]">b</h1>
