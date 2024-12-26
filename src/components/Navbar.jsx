@@ -15,7 +15,7 @@ function Navbar() {
   };
 
   return (
-    <div className="relative container mx-auto flex justify-between items-center h-20">
+    <div className="relative container p-5 mx-auto flex justify-between items-center h-20 shadow-md shadow-[#E5E5E5]">
      
       <div className="flex items-center">
         <h1 className="p-2 mt-3 satisfy text-[58px]">b</h1>
@@ -37,11 +37,11 @@ function Navbar() {
 
       
       <div
-        className={`absolute sm:relative top-20 sm:top-0 left-0 w-full sm:w-auto  sm:bg-transparent bg-[#7f7f7f]  transition-transform duration-500 ease-in-out ${
+        className={`absolute sm:relative top-20 sm:top-0 left-0 w-full sm:w-auto  sm:bg-transparent  rounded z-50 bg-[#ffffff]  transition-transform duration-500 ease-in-out ${
           isMenuOpen ? "translate-x-0" : "-translate-x-full sm:translate-x-0"
         }`}
       >
-        <ul className="flex flex-col sm:flex-row items-center gap-6 sm:gap-2 md:gap-6 p-6 sm:p-0">
+        <ul className="flex flex-col sm:flex-row items-center dm-sans font-bold text-[#000000] gap-6 sm:gap-2 md:gap-6 p-6 sm:p-0">
           <li className="flex items-center text-[16px]  ">
             <SiCivicrm className="text-[20px] me-2" />
             Products
@@ -54,8 +54,8 @@ function Navbar() {
             <PiFlowerTulipDuotone className="text-[20px] me-2" />
             Agriculture
           </li>
-          <h1 className="flex items-center text-[16px] p-3 rounded-full bg-[#635BFF] text-white">
-            <FiPhoneCall className="me-2" /> 9021030200
+          <h1 className="flex items-center text-[10px] lg:text-[16px] p-3 rounded-full bg-[#635BFF] text-white">
+            <FiPhoneCall className="me-2" /> +1 858 433 6042
           </h1>
         </ul>
       </div>

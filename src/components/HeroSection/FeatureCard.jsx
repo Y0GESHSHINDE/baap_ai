@@ -10,21 +10,21 @@ const FeatureCard = ({ icon: Icon, title, description, bgColor }) => {
       >
         
         <div className="flex">
-          {Icon && <Icon className="text-black text-[30px] mt-2" />}
-          <h3 className="text-black text-[15px] ms-2 dm-sans font-bold">{title}</h3>
+          {Icon && <Icon className="text-black text-[40px] leading-none mt-2" />}
+          <h3 className="text-black text-[15px] ms-2 dm-sans">{title}</h3>
         </div>
 
         
-        <p className="text-[15px] text-left text-black dm-sans font-normal">
+        <p className="text-[15px] text-left text-black dm-sans-normal font-normal">
           {description}
         </p>
 
         
-        <BsArrowRight className="absolute bottom-4 right-4 text-black text-[20px]" />
+        <BsArrowRight className="absolute bottom-5 right-4 text-black text-[22px]" />
       </div>
 
       
-      <h1 className="relative -top-14 lg:ms-24 text-[50px]">_______</h1>
+      <h1 className="relative -top-9 lg:ms-[90px]  text-[50px]" ><span style={{ color: bgColor }} >━━━━━━</span></h1>
     </div>
   );
 };
