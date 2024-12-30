@@ -1,5 +1,5 @@
 #Box{
-   border-radius: 30px;
+   border-radius: 10px;
    margin-top: 50px;
    transform: matrix(0.93, -0.37, 0.37, 0.93, 0, 0);
 }
