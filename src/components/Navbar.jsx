@@ -42,16 +42,16 @@ function Navbar() {
         }`}
       >
         <ul className="flex flex-col sm:flex-row items-center dm-sans font-bold text-[#000000] gap-6 sm:gap-2 md:gap-6 p-6 sm:p-0">
-          <li className="flex items-center text-[16px]  ">
-            <SiCivicrm className="text-[20px] me-2" />
+          <li className="flex items-center  text-[14px] lg:text-[16px]  ">
+            <SiCivicrm className=" text-[12px] lg:text-[16px] me-2" />
             Products
           </li>
-          <li className="flex items-center text-[16px]  ">
-            <CgLaptop className="text-[20px] me-2" />
+          <li className="flex items-center text-[14px] lg:text-[16px]  ">
+            <CgLaptop className=" text-[16px] lg:text-[20px] me-2" />
             Education
           </li>
-          <li className="flex items-center text-[16px]  ">
-            <PiFlowerTulipDuotone className="text-[20px] me-2" />
+          <li className="flex items-center text-[14px] lg:text-[16px]  ">
+            <PiFlowerTulipDuotone className="text-[16px]  lg:text-[20px] me-2" />
             Agriculture
           </li>
           <h1 className="flex items-center text-[10px] lg:text-[16px] p-3 rounded-full bg-[#635BFF] text-white">

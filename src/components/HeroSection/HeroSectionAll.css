@@ -4,10 +4,5 @@
    transform: matrix(0.93, -0.37, 0.37, 0.93, 0, 0);
 }
 
-@media (max-width : 1024px) {
-   #Box{
-      margin-top: 0px;
-      transform: matrix(0.93, 0, 0, 0.93, 0, 0);
-   }
- }
+
  

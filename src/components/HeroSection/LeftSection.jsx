@@ -1,10 +1,12 @@
 import React from "react";
+import { useState } from "react";
 import { FaUser, FaAppStoreIos } from "react-icons/fa";
 import { MdPersonalInjury, MdPeopleAlt } from "react-icons/md";
 import { SlGraduation } from "react-icons/sl";
 import { TiLeaf } from "react-icons/ti";
 import img1 from "../../../public/assets/—Pngtree—woman work from home with_5388281.png";
-import img2 from "../../../public/assets/Group 6.svg";
+import img2 from "../../../public/assets/man work from home study_6549829.png";
+
 import FeatureCard from "./FeatureCard";
 import {
   IoChevronForwardCircleOutline,
@@ -12,18 +14,43 @@ import {
 } from "react-icons/io5";
 
 function LeftSection() {
+  const images = [
+    { src: [img1], alt: "Work from home" },
+    { src: [img2], alt: "Team meeting" },
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handlePrevious = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
   return (
     <div>
-      <div className=" h-[220px] sm:h-[327px] flex justify-evenly sm:grid sm:grid-cols-3 lg:grid-cols-12 ">
-        <div className="flex items-center  text-[30px] opacity-20  sm:col-span-1  w-8 lg:col-span-1 lg:-ms-4  ">
+      <div className=" h-[220px] sm:h-[327px] flex justify-evenly sm:grid sm:grid-cols-3 lg:grid-cols-12  ">
+        <div
+          className="flex items-center text-[30px] opacity-70 cursor-pointer sm:col-span-1 w-8 lg:col-span-1 lg:-ms-4"
+          onClick={handlePrevious}>
           <IoChevronBackCircleOutline />
         </div>
+
         <img
-          src={img1}
-          alt="Work from home"
-          className="w-[220px] h-[220px] sm:w-[327px] sm:h-[327px] sm:col-span-1 lg:col-span-5 lg:-ms-12"
+          src={images[currentIndex].src}
+          alt={images[currentIndex].alt}
+          className="w-[220px] h-[220px] sm:w-[327px] sm:h-[327px] sm:col-span-1 lg:col-span-5  lg:-ms-12  "
         />
-        <div className="flex justify-end items-center text-[30px] opacity-20   sm:col-span-1  lg:col-span-6 ">
+
+        <div
+          className="flex justify-end items-center text-[30px] opacity-70 cursor-pointer sm:col-span-1 lg:col-span-6 "
+          onClick={handleNext}>
           <IoChevronForwardCircleOutline />
         </div>
       </div>

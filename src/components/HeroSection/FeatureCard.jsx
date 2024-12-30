@@ -24,7 +24,7 @@ const FeatureCard = ({ icon: Icon, title, description, bgColor }) => {
       </div>
 
       
-      <span className="relative inline-block  md:ml-0 lg:ml-0 -top-9 lg:ms-[90px] w-auto text-[50px]" ><span style={{ color: bgColor }} >━━━━━━</span></span>
+      <h1 className="relative -top-9 lg:ms-[90px]  text-[50px]" ><span style={{ color: bgColor }} >━━━━━━</span></h1>
     </div>
   );
 };

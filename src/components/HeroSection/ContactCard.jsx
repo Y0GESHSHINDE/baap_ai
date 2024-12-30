@@ -5,7 +5,7 @@ import whatsapp from "../../../public/assets/Icon akar-whatsapp-fill.svg"
 
 function ContactCard() {
   return (
-    <div className="max-w-sm mx-auto p-6 w-[280px] 2xl:w-[346px] h-[473px] bg-white rounded-lg shadow-md">
+    <div className="max-w-sm mx-auto p-6 w-[240px] md:w-[280px] 2xl:w-[346px] md:h-[473px] bg-white rounded-lg shadow-md">
       <h2 className="text-lg font-bold text-gray-800 dm-sans  text-[16px]">
         Get in touch
       </h2>
